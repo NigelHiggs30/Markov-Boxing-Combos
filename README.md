@@ -16,7 +16,7 @@ collections
 ## Example
 
 Here is an example of how to use this code to generate a random sequence of punches:
-```
+```python
 # Import necessary packages
 from itertools import chain
 from random import randrange
