@@ -13,6 +13,26 @@ itertools
 collections
 ```
 
-##Example
-Here is an example of how to use this code to generate a random sequence of punches:
+## Example
 
+Here is an example of how to use this code to generate a random sequence of punches:
+```
+# Import necessary packages
+from itertools import chain
+from random import randrange
+from random import choices
+from collections import Counter
+
+# Define the original data
+data = [['Jab', 'Cross', 'Hook'], ['Jab', 'Cross', 'Cross', 'Hook'], ['Jab', 'Cross', 'Hook', 'Hook'], ['Jab', 'Jab', 'Cross'], ['Jab', 'Cross', 'Cross', 'Cross']]
+
+# Calculate the probability distribution of the lengths of the sequences of punches
+len_combo_probs = calc_len_combo_probs(data)
+
+# Count the occurrences of each punch in the data
+punch_counts = punch_bin_counts(result)
+
+# Generate a random sequence of punches
+combo_generator(result, data, matrix)
+
+```
